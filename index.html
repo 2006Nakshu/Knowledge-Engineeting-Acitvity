@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Agriculture System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌱 Smart Agriculture System</h1>
+    <p>Knowledge Engineering for Uncertain Weather Information</p>
+</header>
+
+<div class="container">
+
+    <section class="details">
+        <h2>Student Details</h2>
+        <p>Name: NAKSHATRA V S</p>
+        <p>Register Number: 732924ITR072</p>
+        <p>Subject: Knowledge Engineering</p>
+    </section>
+
+    <section class="dashboard">
+        <div class="card">
+            <h3>Temperature</h3>
+            <h2 id="tempValue">30°C</h2>
+        </div>
+
+        <div class="card">
+            <h3>Rainfall</h3>
+            <h2 id="rainValue">20 mm</h2>
+        </div>
+
+        <div class="card">
+            <h3>Soil Moisture</h3>
+            <h2 id="moistureValue">40%</h2>
+        </div>
+
+        <div class="card">
+            <h3>System Status</h3>
+            <h2 id="systemStatus">Waiting</h2>
+        </div>
+    </section>
+
+    <section class="panel">
+        <h2>Weather Sensor Input</h2>
+
+        <label>Temperature (°C)</label>
+        <input type="number" id="temperature"
+               value="30" min="0" max="60">
+
+        <label>Rainfall (mm)</label>
+        <input type="number" id="rainfall"
+               value="20" min="0" max="500">
+
+        <label>Soil Moisture (%)</label>
+        <input type="number" id="moisture"
+               value="40" min="0" max="100">
+
+        <label>Humidity (%)</label>
+        <input type="number" id="humidity"
+               value="60" min="0" max="100">
+
+        <label>Temperature Sensor Accuracy (%)</label>
+        <input type="number" id="tempAccuracy"
+               value="90" min="1" max="100">
+
+        <label>Rainfall Sensor Accuracy (%)</label>
+        <input type="number" id="rainAccuracy"
+               value="80" min="1" max="100">
+
+        <label>Soil Sensor Accuracy (%)</label>
+        <input type="number" id="soilAccuracy"
+               value="85" min="1" max="100">
+
+        <button onclick="analyzeWeather()">
+            Analyze Weather
+        </button>
+
+        <button class="reset" onclick="resetSystem()">
+            Reset
+        </button>
+    </section>
+
+    <section class="panel">
+        <h2>Knowledge Base</h2>
+        <div id="knowledge">
+            Weather sensor information will appear here.
+        </div>
+    </section>
+
+    <section class="panel">
+        <h2>Uncertainty Analysis</h2>
+        <div id="uncertainty">
+            Waiting for sensor analysis...
+        </div>
+    </section>
+
+    <section class="panel">
+        <h2>Intelligent Agricultural Recommendation</h2>
+        <div id="recommendation">
+            Waiting for analysis...
+        </div>
+    </section>
+
+    <section class="panel">
+        <h2>Decision Making Result</h2>
+        <div id="result">
+            No decision has been made.
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>Developed by NAKSHATRA V S</p>
+    <p>Register Number: 732924ITR072</p>
+    <p>Knowledge Engineering - Innovative Practice</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
